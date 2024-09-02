@@ -57,7 +57,7 @@ const FormProperty: React.FC = () => {
 
     try {
       // Enviar los datos al servidor
-      const response = await fetch("http://localhost:5000/api/properties", {
+      const response = await fetch("https://inmuebles-backend-production.up.railway.app/api/properties", {
         method: "POST",
         body: formData, // Enviar FormData sin especificar Content-Type
       });

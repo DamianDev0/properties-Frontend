@@ -31,7 +31,7 @@ const PropertyGrid: React.FC = () => {
   useEffect(() => {
     const fetchProperties = async () => {
       try {
-        const response = await fetch("http://localhost:5000/api/properties");
+        const response = await fetch("https://inmuebles-backend-production.up.railway.app/api/properties");
 
         if (!response.ok) {
           throw new Error("Network response was not ok");
